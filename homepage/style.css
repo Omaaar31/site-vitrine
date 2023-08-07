@@ -1,0 +1,37 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+    background: url("../images/image-homepage.jpg");
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+
+header .contact-icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    position: absolute;
+    top: 30px;
+    right: 10%;
+    text-align: center;
+    color: white;
+}
+
+header .contact-item {
+    display: flex;
+    align-items: center;
+}
+
+header .phone-icon,
+header .mail-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
