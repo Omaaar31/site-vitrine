@@ -1,12 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter&family=Roboto:wght@300&display=swap');
 :root {
     /* Colors */
-    --main-color: #8982DD;
-    --secondary-color: #FFFFFF;
-    --gadiant-color1: #C0BED6;
-    --gadiant-color2: #B7B3E8;
-    --gadiant-color3: #A29AFF;
-    --text-color: #6C3431;
+    --main-color: #7BB9C4;
+    --gadiant-color1: #8BC5CF;
+    --gadiant-color2: #62B9C8;
+    --gadiant-color3: #34A5B8;
+    --gadiant-color4: #0097B2;
+    --text-color: #000000;
     --alterrnative-text-color: #FFFFFF;
     /* Fonts */
     --title-font: 'Inter', 'Arial';
@@ -29,26 +29,25 @@ header {
 
 .header-container {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
     padding: 20px;
     height: 100px;
-    z-index: 2;
+    flex-flow: row;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: flex-end;
+    z-index: 1;
 }
 
 header .logo {
-    max-height: 100%;
-    max-width: 100%;
-    height: auto;
-    width: auto;
-    object-fit: contain;
+    position: relative;
+    margin: 90px 0 0 0;
+    cursor: pointer;
     z-index: 2;
 }
 
 header .contact-icons {
-    position: absolute;
-    top: 20px;
-    right: 10%;
+    margin: 0 30px 0 0;
     color: var(--alterrnative-text-color);
     font-family: var(--text-font);
 }
@@ -56,6 +55,7 @@ header .contact-icons {
 header .contact-item {
     display: flex;
     align-items: center;
+    font-size: 1.4em;
 }
 
 header .phone-icon,
@@ -82,29 +82,40 @@ header .mail-icon {
     text-align: center;
 }
 
-.section-content h1 {
-    font-family: var(--title-font);
-    margin: 0;
-    font-size: 3em;
+section .text-section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
 }
 
-.section-content p {
+section .section-content h1 {
+    font-family: var(--title-font);
+    margin: 0;
+    font-size: 4em;
+}
+
+section .section-content p {
     font-family: var(--text-font);
     margin: 0;
-    font-size: 1.5em;
+    font-size: 2em;
     font-weight: 300;
-    margin: 20px 0;
+}
+
+section.text-italic {
+    font-style: italic;
 }
 
 .separation-line {
-    border: solid 2px var(--main-color);
+    border: solid 2px var(--gadiant-color1);
     width: 400px;
     margin: 20px 0;
 }
 
 .arrow-container {
     position: absolute;
-    left: 20px;
+    left: 10px;
     animation: moveContainer 1s infinite alternate;
 }
 
@@ -123,7 +134,7 @@ header .mail-icon {
 }
 
 .arrow {
-    border: solid 1px var(--main-color);
+    border: solid 2px var(--main-color);
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -140,6 +151,7 @@ header .mail-icon {
     transform: rotate(45deg);
     left: 20px;
     top: 30px;
+    border-radius: 12%;
 }
 
 .arrow .div2 {
@@ -151,6 +163,7 @@ header .mail-icon {
     transform: rotate(45deg);
     left: 20px;
     top: 15px;
+    border-radius: 12%;
 }
 
 .menu-icon {
@@ -189,11 +202,9 @@ header .mail-icon {
 
 .close-button {
     position: absolute;
+    cursor: pointer;
     top: 20px;
     right: 20px;
-    width: 30px;
-    height: 30px;
-    cursor: pointer;
 }
 
 .menu {
@@ -226,7 +237,7 @@ header .mail-icon {
 }
 
 .menu-line-separation {
-    border: solid 1px var(--secondary-color);
+    border: solid 1px var(--alterrnative-text-color);
     width: 80%;
     margin: 0 auto;
 }
@@ -247,11 +258,13 @@ header .mail-icon {
     display: none;
 }
 
-@media (max-width: 768px) {
+@media (min-width:768px) and (max-width: 991px) {
     header .header-container {
         position: relative;
         display: flex;
         flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
         padding: 20px;
         height: 100px;
     }
@@ -260,13 +273,14 @@ header .mail-icon {
     }
     header .logo {
         width: 100%;
-        height: 200px;
+        height: 100%;
+        margin: 30px 0 0 30px;
     }
-    .section-content h1 {
-        font-size: 2em;
+    header .logo-link {
+        width: 60%;
     }
-    .section-content p {
-        font-size: 1em;
+    .text-section {
+        font-size: x-small;
     }
     .separation-line {
         width: 50%;
@@ -278,9 +292,120 @@ header .mail-icon {
         display: block;
         cursor: pointer;
         margin-left: 20px;
+        width: 100px;
+    }
+    .overlay {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5);
+        z-index: 1;
+        display: none;
+    }
+    .overlay.active {
+        display: block;
+    }
+    .sidebar {
+        position: fixed;
+        top: 0;
+        left: -300px;
+        width: 300px;
+        height: 100%;
+        background-color: var(--main-color);
+        transition: left 0.4s ease;
+        z-index: 3;
+    }
+    .sidebar.open {
+        left: 0;
+    }
+    .close-button {
+        position: absolute;
+        cursor: pointer;
+        top: 20px;
+        right: 20px;
+    }
+    .menu {
+        list-style: none;
+        padding: 0;
+    }
+    .logo-menu {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 50px 0;
+        margin: 0 0 0 30px;
+    }
+    .menu li {
+        text-align: center;
+        margin: 40px 0;
+    }
+    .menu li a {
+        color: var(--text-color);
+        text-decoration: none;
+        display: block;
+        transition: color 0.3s ease;
+        font-family: var(--title-font);
+    }
+    .menu-line-separation {
+        border: solid 1px var(--alterrnative-text-color);
+        width: 80%;
+        margin: 0 auto;
+    }
+    .menu li a:hover {
+        color: var(--alterrnative-text-color);
+    }
+    .social-logo {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+        margin: 180px 0;
+    }
+    .logo-hidden {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    header .header-container {
+        position: relative;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+        padding: 20px;
+        height: 100px;
+    }
+    header .contact-icons {
+        display: none;
+    }
+    header .logo {
+        width: 100%;
+        height: 100%;
+        margin: 30px 0 0 30px;
+    }
+    header .logo-link {
+        width: 60%;
+    }
+    .text-section {
+        font-size: x-small;
+    }
+    .separation-line {
+        width: 50%;
+    }
+    .arrow-container {
+        display: none;
+    }
+    .menu-icon {
+        display: block;
+        cursor: pointer;
+        width: 100px;
     }
     .menu-icon img {
-        width: 40%;
+        width: 60%;
         height: auto;
     }
 }
@@ -295,7 +420,10 @@ header .mail-icon {
     }
     header .logo {
         width: 100%;
-        height: 200px;
+        height: 100%;
+    }
+    .text-section {
+        font-size: x-small;
     }
     .menu-icon {
         display: block;
@@ -333,7 +461,11 @@ header .mail-icon {
     header .logo {
         position: absolute;
         margin: 0 10px;
-        width: 80%;
+        width: 100%;
+        height: 100%;
+    }
+    .text-section {
+        font-size: xx-small;
     }
     .menu-icon {
         position: absolute;

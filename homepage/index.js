@@ -5,6 +5,7 @@ const overlay = document.querySelector('.overlay');
 const logo = document.querySelector('.logo');
 const close = document.querySelector('.close-button');
 
+
 arrowContainer.addEventListener('click', () => {
     sidebar.classList.toggle('open');
     overlay.classList.toggle('active');
