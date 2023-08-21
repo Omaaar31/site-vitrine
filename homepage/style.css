@@ -114,8 +114,11 @@ section.text-italic {
 }
 
 .arrow-container {
-    position: absolute;
+    position: fixed;
+    top: 50%;
     left: 10px;
+    transform: translate(-50%, -50%);
+    z-index: 10;
     animation: moveContainer 1s infinite alternate;
 }
 
@@ -265,6 +268,11 @@ section.text-italic {
 
 .logo-hidden {
     display: none;
+}
+
+.new-section .section-content {
+    margin-top: 600px;
+    color: var(--text-color);
 }
 
 @media (min-width:768px) and (max-width: 991px) {
