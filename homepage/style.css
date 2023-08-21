@@ -19,7 +19,7 @@ body {
 }
 
 header {
-    background: url("../images/image-homepage.jpg") no-repeat center center fixed;
+    background: url("../assets/images/image-homepage.jpg") no-repeat center center fixed;
     background-size: cover;
     position: absolute;
     height: 100vh;
