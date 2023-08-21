@@ -209,6 +209,7 @@ section.text-italic {
     margin: 100px 0 0 0;
     cursor: pointer;
     z-index: 2;
+    width: 50%;
 }
 
 .sidebar.open {
@@ -321,6 +322,7 @@ section.text-italic {
     }
     .logo-menu {
         margin: 0;
+        width: 50%;
     }
     .close-button {
         top: 20px;
@@ -350,7 +352,7 @@ section.text-italic {
     header .logo {
         width: 100%;
         height: 100%;
-        margin: 30px 0 0 30px;
+        margin: 0 0 0 30px;
     }
     header .logo-link {
         width: 60%;
@@ -379,6 +381,7 @@ section.text-italic {
     }
     .logo-menu {
         margin: 0;
+        width: 50%;
     }
     .close-button {
         top: 20px;
@@ -435,7 +438,8 @@ section.text-italic {
         left: -100%;
     }
     .logo-menu {
-        margin-bottom: 40px;
+        margin: 0 0 40px 0;
+        width: 50%;
     }
     .close-button {
         top: 10px;
@@ -458,8 +462,9 @@ section.text-italic {
         height: 100px;
     }
     header .logo {
-        width: 100%;
-        height: 100%;
+        width: 200px;
+        height: 40px;
+        margin: -5px 0 0 -10px;
     }
     .text-section {
         font-size: x-small;
@@ -504,10 +509,7 @@ section.text-italic {
         margin: -20px;
     }
     header .logo {
-        position: absolute;
-        margin: 0 10px;
-        width: 100%;
-        height: 100%;
+        display: none;
     }
     .text-section {
         font-size: xx-small;
@@ -515,7 +517,7 @@ section.text-italic {
     .menu-icon {
         position: absolute;
         cursor: pointer;
-        margin: 0 0 0 40px;
+        margin: 30px 0 0 40px;
     }
     .sidebar {
         font-size: 2vw;
