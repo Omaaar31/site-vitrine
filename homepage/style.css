@@ -65,8 +65,8 @@ header .mail-icon {
     margin: 0 10px;
 }
 
-.section-content {
-    position: absolute;
+.first-section .section-content {
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -82,28 +82,29 @@ header .mail-icon {
     text-align: center;
 }
 
-section .text-section {
+.first-section .text-section {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin: 300px;
     gap: 20px;
 }
 
-section .section-content h1 {
+.first-section .section-content h1 {
     font-family: var(--title-font);
     margin: 0;
     font-size: 4em;
 }
 
-section .section-content p {
+.first-section .section-content p {
     font-family: var(--text-font);
     margin: 0;
     font-size: 2em;
     font-weight: 300;
 }
 
-section.text-italic {
+.first-section .text-italic {
     font-style: italic;
 }
 
@@ -137,7 +138,7 @@ section.text-italic {
 }
 
 .arrow {
-    border: solid 2px var(--main-color);
+    border: solid 2px var(--gadiant-color4);
     height: 60px;
     width: 60px;
     border-radius: 50%;
@@ -149,8 +150,8 @@ section.text-italic {
     position: absolute;
     height: 20px;
     width: 20px;
-    border-top: 3px solid var(--main-color);
-    border-left: 3px solid var(--main-color);
+    border-top: 3px solid var(--gadiant-color4);
+    border-left: 3px solid var(--gadiant-color4);
     transform: rotate(45deg);
     left: 20px;
     top: 30px;
@@ -161,8 +162,8 @@ section.text-italic {
     position: absolute;
     height: 20px;
     width: 20px;
-    border-top: 3px solid var(--main-color);
-    border-left: 3px solid var(--main-color);
+    border-top: 3px solid var(--gadiant-color4);
+    border-left: 3px solid var(--gadiant-color4);
     transform: rotate(45deg);
     left: 20px;
     top: 15px;
@@ -270,9 +271,122 @@ section.text-italic {
     display: none;
 }
 
-.new-section .section-content {
-    margin-top: 600px;
+
+/* Second Section */
+
+.second-section {
+    margin: 100px 0 -80px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.second-section .section-content h2 {
+    font-family: var(--title-font);
+    margin: 20px 0 40px 0;
+    text-align: center;
     color: var(--text-color);
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.second-section .section-content p {
+    font-family: var(--text-font);
+    margin: 0;
+    color: var(--alterrnative-text-color);
+}
+
+.second-section .section-content .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.second-section .section-content .card .left {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: var(--main-color);
+    margin: 0 0 200px 0;
+}
+
+.second-section .section-content .card.right {
+    flex: 0 0 70%;
+}
+
+.second-section .section-content .card .right img {
+    width: 600px;
+    height: 400px;
+    margin: 5px 0 0 0;
+    margin: 200px 0 0 -16px;
+}
+
+
+/* Third Section */
+
+.third-section {
+    margin: 150px 0 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--main-color);
+}
+
+.third-section .section-content {
+    margin: 100px 0 0 0;
+}
+
+.third-section .section-content h2 {
+    font-family: var(--title-font);
+    margin: 0;
+    text-align: center;
+    color: var(--text-color);
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+.third-section .section-content p {
+    font-family: var(--text-font);
+    margin: 50px 0 20px 0;
+    color: var(--alterrnative-text-color);
+}
+
+.third-section .section-content .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 0 20px 0;
+}
+
+.third-section .section-content .card.left {
+    flex: 0 0 70%;
+}
+
+.third-section .section-content .card .left img {
+    width: 600px;
+    height: 500px;
+    margin: 5px 0 0 0;
+}
+
+.third-section .section-content .card .right {
+    flex: 0 0 30%;
+    padding: 20px;
+    background-color: var(--main-color);
+    margin: 0 0 0 20px;
+}
+
+.third-section .section-content .card .right button {
+    background-color: var(--alterrnative-text-color);
+    width: 30%;
+    height: 40px;
+    border: none;
+    color: var(--text-color);
+    font-family: var(--text-font);
+    font-weight: bold;
+    font-size: 1.2rem;
+    cursor: pointer;
+    margin: 40px 0 0 200px;
 }
 
 @media (min-width:768px) and (max-width: 991px) {
