@@ -17,6 +17,7 @@
         margin: 0;
         padding: 0;
     }
+    /*Header*/
     
     header {
         background: url("../assets/images/image-homepage.jpg") no-repeat center center fixed;
@@ -64,6 +65,7 @@
         height: 50px;
         margin: 0 10px;
     }
+    /*First section*/
     
     .first-section .section-content {
         position: relative;
@@ -124,7 +126,7 @@
     }
     
     .arrow-container:hover {
-        box-shadow: 0 0 10px 0 var(--alterrnative-text-color);
+        box-shadow: 0 0 10px 0 var(--gadiant-color4);
         border-radius: 50%;
     }
     
@@ -265,6 +267,10 @@
         align-items: center;
         gap: 20px;
         margin: 0 0 100px 0;
+    }
+    
+    .social-logo img {
+        width: 100px;
     }
     
     .logo-hidden {
@@ -469,6 +475,73 @@
         background-color: var(--gadiant-color4);
         border-radius: 20px;
     }
+    /*Footer*/
+    
+    footer {
+        background-color: var(--main-color);
+        padding: 40px;
+    }
+    
+    footer .footer-content {
+        display: flex;
+        flex-direction: row;
+        align-items: flex-start;
+    }
+    
+    footer .footer-content iframe {
+        margin: 0 0 0 100px;
+    }
+    
+    footer .right-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+        margin-left: 60px;
+    }
+    
+    footer .right-content .icon-span {
+        display: flex;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+    
+    footer .right-content img {
+        width: 100px;
+    }
+    
+    footer .right-content span {
+        font-family: var(--text-font);
+        color: var(--text-color);
+        font-size: 1.2rem;
+    }
+    
+    footer .right-content a {
+        display: flex;
+        /* Ajoutez cette ligne */
+        align-items: center;
+        /* Ajoutez cette ligne */
+    }
+    
+    footer .right-content a {
+        text-decoration: none;
+    }
+    
+    footer .copyright {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        margin: 30px 0 0 0;
+    }
+    
+    footer .copyright p {
+        font-family: var(--text-font);
+        color: var(--text-color);
+        font-size: 1rem;
+        margin: 0 0 0 10px;
+    }
+    /* Media Queries */
     
     @media (min-width: 768px) and (max-width: 991px) {
         header .header-container {
