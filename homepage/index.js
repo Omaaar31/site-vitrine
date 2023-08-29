@@ -39,8 +39,7 @@ const revealOptions = {
     duration: 1000, // Durée de l'animation en millisecondes
     origin: "left", // Direction de laquelle l'élément sera révélé
     opacity: 0, // Commence avec une opacité de 0 (invisible)
-    reset: true, // Réinitialise l'animation lorsqu'elle est hors de la vue
-    resetOnce: true, // Réinitialise l'animation une fois que l'élément est hors de la vue
+    reset: false, // Réinitialise l'animation lorsqu'elle est hors de la vue
     easing: "ease-in-out", // Type d'animation
 };
 
