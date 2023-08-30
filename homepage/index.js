@@ -4,6 +4,7 @@ const sidebar = document.querySelector('.sidebar');
 const overlay = document.querySelector('.overlay');
 const logo = document.querySelector('.logo');
 const close = document.querySelector('.close-button');
+const returnTop = document.querySelector('.arrow-container-return-top');
 
 
 arrowContainer.addEventListener('click', () => {
@@ -28,6 +29,10 @@ close.addEventListener('click', () => {
     sidebar.classList.remove('open'); // Ferme la sidebar
     overlay.classList.remove('active'); // Désactive l'overlay
     logo.classList.remove('logo-hidden');
+});
+
+returnTop.addEventListener('click', () => {
+    window.scrollTo(0, 0);
 });
 
 // Initialisez ScrollReveal
