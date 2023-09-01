@@ -816,6 +816,16 @@
                                     .first-section .section-content .card {
                                         display: block;
                                     }
+                                    .first-section .section-content .card .left {
+                                        width: 80%;
+                                        margin-right: auto;
+                                        margin-left: auto;
+                                    }
+                                    .first-section .section-content .card .right img {
+                                        margin: -200px 0 0 0;
+                                        width: 85%;
+                                        height: auto;
+                                    }
                                     .second-section .section-content .card .mobile-title {
                                         display: block;
                                         font-family: var(--title-font);
@@ -828,16 +838,6 @@
                                     }
                                     .second-section .section-content .card .right .desktop-title {
                                         display: none;
-                                    }
-                                    .first-section .section-content .card .left {
-                                        width: 80%;
-                                        margin-right: auto;
-                                        margin-left: auto;
-                                    }
-                                    .first-section .section-content .card .right img {
-                                        margin: -200px 0 0 0;
-                                        width: 85%;
-                                        height: auto;
                                     }
                                     .second-section .section-content {
                                         text-align: center;
@@ -987,6 +987,16 @@
                                     .first-section .section-content .card {
                                         display: block;
                                     }
+                                    .first-section .section-content .card .left {
+                                        width: 80%;
+                                        margin-right: auto;
+                                        margin-left: auto;
+                                    }
+                                    .first-section .section-content .card .right img {
+                                        margin: -200px 0 24px 0;
+                                        width: 90%;
+                                        height: 190px;
+                                    }
                                     .second-section .section-content .card .mobile-title {
                                         display: block;
                                         font-family: var(--title-font);
@@ -999,16 +1009,6 @@
                                     }
                                     .second-section .section-content .card .right .desktop-title {
                                         display: none;
-                                    }
-                                    .first-section .section-content .card .left {
-                                        width: 80%;
-                                        margin-right: auto;
-                                        margin-left: auto;
-                                    }
-                                    .first-section .section-content .card .right img {
-                                        margin: -200px 0 24px 0;
-                                        width: 90%;
-                                        height: 190px;
                                     }
                                     .second-section .section-content {
                                         text-align: center;
