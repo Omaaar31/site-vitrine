@@ -572,12 +572,12 @@
                                 footer .footer-content {
                                     display: flex;
                                     flex-direction: row;
-                                    justify-content: flex-end;
+                                    justify-content: center;
                                     padding: 20px;
                                 }
                                 
                                 footer .footer-content iframe {
-                                    width: 100%;
+                                    width: 60%;
                                     height: 450px;
                                 }
                                 
