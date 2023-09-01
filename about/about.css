@@ -117,7 +117,7 @@ header .mail-icon {
     height: 4px;
     z-index: -1;
     border-radius: 3px;
-    transition: all .0.1s ease-in-out;
+    transition: all .3s ease-in-out;
 }
 
 .text-section .breadcrumb a:hover::before {
