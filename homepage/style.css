@@ -346,12 +346,14 @@
                                     padding: 20px;
                                     background-color: var(--main-color);
                                     margin: 0 0 200px 0;
+                                    border-radius: 10px;
                                 }
                                 
                                 .first-section .section-content .card .right img {
                                     width: 600px;
                                     height: auto;
                                     margin: 200px 0 0 -16px;
+                                    border-radius: 10px;
                                 }
                                 /* Second Section */
                                 
@@ -390,18 +392,21 @@
                                     display: flex;
                                     flex-wrap: wrap;
                                     justify-content: center;
+                                    gap: 70px;
                                 }
                                 
                                 .second-section .section-content .card .left img {
                                     width: 600px;
                                     height: 500px;
                                     margin: 5px 0 0 0;
+                                    border-radius: 10px;
                                 }
                                 
                                 .second-section .section-content .card .right {
                                     flex: 0 0 30%;
                                     padding: 20px;
                                     margin: 0 0 0 20px;
+                                    text-align: center;
                                 }
                                 
                                 .second-section .section-content .card .right button {
