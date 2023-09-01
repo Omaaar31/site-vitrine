@@ -10,13 +10,12 @@
     <link rel="icon" type="image/png" sizes="32x32" href="../assets/icons/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="../assets/icons/favicon-16x16.png">
     <link rel="manifest" href="../assets/icons/site.webmanifest">
-    <link rel="stylesheet" href="style.css" />
-    <script src="https://unpkg.com/scrollreveal@4.0.7/dist/scrollreveal.min.js"></script>
+    <link rel="stylesheet" href="about.css">
 
 </head>
 
 <body>
-    <!--HEADER-->
+
     <header>
         <div class="header-container">
             <!--  Menu burger for mobile device -->
@@ -24,7 +23,7 @@
                 <img src="../assets/icons/icon-menu.png" alt="menu-icon" />
             </div>
             <!--  End of menu burger for mobile device -->
-            <a class="logo-link" href="index.html">
+            <a class="logo-link" href="../homepage/index.html">
                 <img class="logo" src="../assets/images/logo.png" alt="logo" />
             </a>
 
@@ -40,10 +39,13 @@
             </div>
         </div>
         <div class="text-section">
-            <h1>Achat de tous types de véhicule</h1>
-            <div class="separation-line"></div>
-            <p>Voiture particulière, collection, accidentée,<br> en panne et / ou utilitaire</p>
-            <p class="text-italic">Sur la région de Toulouse et Haute-Garonne</p>
+            <div class="bold-text">
+                <h1><strong>Qui sommes-nous ?</strong></h1>
+            </div>
+            <div class="breadcrumb">
+                <a href="../homepage/index.html">
+                    Accueil</a> / Qui sommes-nous ?
+            </div>
         </div>
     </header>
 
@@ -56,7 +58,7 @@
                 <a href="#">
                     <img class="logo-menu" src="../assets/images/logo-sidebar.png" alt="logo" />
                 </a>
-                <li><a href="index.html">Accueil</a></li>
+                <li><a href="../homepage/index.html">Accueil</a></li>
                 <div class="menu-line-separation"></div>
                 <li><a href="#">Vendre<br> ma voiture</a></li>
                 <div class="menu-line-separation"></div>
@@ -75,7 +77,6 @@
         </div>
     </nav>
 
-    <!--MAIN-->
     <main>
         <article>
             <!--FIRST SECTION-->
@@ -96,70 +97,8 @@
                     </div>
                 </div>
             </section>
-            <!--SECOND SECTION-->
-            <section class="second-section">
-                <div class="section-content">
-                    <div class="card">
-                        <h2 class="mobile-title"><strong>Nos services</strong>
-                        </h2>
-                        <div class="left">
-                            <img src="../assets/images/services-image.jpg" alt="services-image">
-                        </div>
-                        <div class="right">
-                            <h2 class="desktop-title"><strong>Nos services</strong></h2>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et molestie justo. Nam scelerisque nec dolor a eleifend. Proin malesuada metus sed tristique ornare. Curabitur eu ipsum nunc. Vestibulum ultrices orci iaculis nisi
-                                vestibulum ultrices. Nunc vestibulum quam a massa pulvinar pulvinar. Phasellus interdum magna vitae ipsum tincidunt, sed condimentum risus rhoncus. Aliquam eleifend sem et sem ornare pellentesque. Donec sed quam at libero
-                                imperdiet dignissim sed sit amet eros. Vivamus porttitor porttitor velit volutpat sollicitudin. Donec viverra, justo sed mollis vestibulum, ligula ipsum efficitur augue, a laoreet dui diam feugiat leo. Curabitur non volutpat
-                                libero. Donec nec dolor eget libero dictum commodo quis vitae tortor. Cras faucibus eget augue non condimentum. Curabitur in semper massa. Morbi pulvinar ac quam vel sagittis. Aenean non justo nunc. Nam lorem dolor, vulputate
-                                quis nunc placerat, viverra imperdiet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et molestie justo. Nam scelerisque nec dolor a eleifend. Proin malesuada metus sed tristique ornare. Curabitur
-                                eu ipsum nunc. Vestibulum ultrices orci iaculis nisi vestibulum ultrices. Nunc vestibulum quam a massa pulvinar pulvinar.</p>
-                            <button>Vendre ma voiture</button>
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <!--THIRD SECTION-->
-            <section class="third-section">
-                <div class="section-content">
-                    <h2><strong>Comment ça marche ?</strong></h2>
-                    <div class="card">
-                        <div class="step-one" id="first-step">
-                            <img src="../assets/icons/step-one.png" alt="first-step">
-                            <div class="step-content">
-                                <h3>Formulaire</h3>
-                                <a href="">
-                                    <p>Remplir le formulaire</p>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="step-two" id="second-step">
-                            <img src="../assets/icons/step-two.png" alt="second-step">
-                            <div class="step-content">
-                                <h3>Prise de contact</h3>
-                                <p>Nous vous conterons pour convenir d'un rendez-vous une fois l'estimation réalisé</p>
-                            </div>
-                        </div>
-                        <div class="step-three" id="third-step">
-                            <img src="../assets/icons/step-three.png" alt="third-step">
-                            <div class="step-content">
-                                <h3>Rendez-vous</h3>
-                                <p>Vous venez dans nos locaux pour que la reprise de votre voiture s'effectue</p>
-                            </div>
-                        </div>
-                        <div class="step-four" id="fourth-step">
-                            <img src="../assets/icons/step-four.png" alt="fourth-step">
-                            <div class="step-content">
-                                <h3>Paiement</h3>
-                                <p>Règlement de la vente</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
         </article>
     </main>
-
     <!--ARROW MENU-->
     <div class="arrow-container">
         <div class="arrow">
@@ -218,9 +157,8 @@
             </a>
         </div>
     </footer>
+    <script src="../homepage/index.js"></script>
 
-
-    <script src="index.js"></script>
 </body>
 
 </html>
