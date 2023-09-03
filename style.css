@@ -596,6 +596,7 @@ footer .footer-content {
 footer .footer-content iframe {
     width: 60%;
     height: 450px;
+    border-radius: 8px;
 }
 
 footer .right-content {
