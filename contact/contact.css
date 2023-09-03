@@ -26,7 +26,7 @@ body {
 /*Header*/
 
 header {
-    background: url("../assets/images/image-about.jpg") center;
+    background: url("../assets/images/image-contact.jpg") center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -336,50 +336,6 @@ header .mail-icon {
 }
 
 
-/* First Section */
-
-.first-section {
-    margin: 60px 0 20px 0;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.first-section .section-content h2 {
-    font-family: var(--title-font);
-    margin: 20px 0 40px 0;
-    text-align: center;
-    color: var(--text-color);
-    text-transform: uppercase;
-    text-decoration: underline;
-}
-
-.first-section .section-content p {
-    font-family: var(--text-font);
-    margin: 0 0 20px 0;
-    color: var(--alterrnative-text-color);
-}
-
-.first-section .section-content .card {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.first-section .section-content .card .left {
-    flex: 0 0 35%;
-    padding: 20px;
-    background-color: var(--main-color);
-    margin: 0 0 200px 0;
-}
-
-.first-section .section-content .card .right img {
-    width: 600px;
-    height: auto;
-    margin: 200px 0 0 -16px;
-}
-
-
 /*Footer*/
 
 footer {
@@ -512,22 +468,6 @@ footer .copyright a {
     .social-logo {
         margin: 60px 0 -20px 0;
     }
-    .first-section .section-content {
-        text-align: center;
-    }
-    .first-section .section-content .card {
-        display: block;
-    }
-    .first-section .section-content .card .left {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .first-section .section-content .card .right img {
-        margin: -200px 0 0 0;
-        width: 85%;
-        height: auto;
-    }
 }
 
 @media (max-width: 767px) {
@@ -582,22 +522,6 @@ footer .copyright a {
     }
     .social-logo {
         margin: 60px 0 -20px 0;
-    }
-    .first-section .section-content {
-        text-align: center;
-    }
-    .first-section .section-content .card {
-        display: block;
-    }
-    .first-section .section-content .card .left {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .first-section .section-content .card .right img {
-        margin: -200px 0 0 0;
-        width: 85%;
-        height: auto;
     }
     footer .footer-content {
         display: flex;
@@ -682,22 +606,6 @@ footer .copyright a {
     .social-logo img {
         width: 70px;
     }
-    .first-section .section-content {
-        text-align: center;
-    }
-    .first-section .section-content .card {
-        display: block;
-    }
-    .first-section .section-content .card .left {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .first-section .section-content .card .right img {
-        margin: -200px 0 24px 0;
-        width: 90%;
-        height: 190px;
-    }
 }
 
 @media (max-width: 300px) {
@@ -711,7 +619,7 @@ footer .copyright a {
     header .logo {
         width: 170%;
         height: 100%;
-        margin: 0 0 0 -40px;
+        margin: 0 0 0 -30px;
     }
     .text-section {
         font-size: xx-small;
@@ -762,22 +670,6 @@ footer .copyright a {
     }
     .social-logo img {
         width: 70px;
-    }
-    .first-section .section-content {
-        text-align: center;
-    }
-    .first-section .section-content .card {
-        display: block;
-    }
-    .first-section .section-content .card .left {
-        width: 70%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .first-section .section-content .card .right img {
-        margin: -200px 0 170px 0;
-        width: 90%;
-        height: auto;
     }
     footer .right-content {
         margin: 0 auto 0 0;
@@ -839,21 +731,5 @@ footer .copyright a {
     .logo-facebook,
     .logo-instagram {
         width: 100%;
-    }
-    .first-section .section-content {
-        text-align: center;
-    }
-    .first-section .section-content .card {
-        display: block;
-    }
-    .first-section .section-content .card .left {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .first-section .section-content .card .right img {
-        margin: -200px 0 136px 0;
-        width: 90%;
-        height: auto;
     }
 }
