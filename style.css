@@ -787,9 +787,9 @@ footer .copyright a {
         display: none;
     }
     header .logo {
-        width: 100%;
+        width: 130%;
         height: 100%;
-        margin: 0 0 0 30px;
+        margin: 0 0 0 -10px;
     }
     header .logo-link {
         width: 60%;
@@ -949,8 +949,9 @@ footer .copyright a {
         height: 100px;
     }
     header .logo {
-        width: 100%;
+        width: 130%;
         height: 100%;
+        margin: 0;
     }
     .text-section {
         font-size: x-small;
@@ -1063,8 +1064,9 @@ footer .copyright a {
         height: 100px;
     }
     header .logo {
-        width: 100%;
+        width: 170%;
         height: 100%;
+        margin: 0 0 0 -40px;
     }
     .text-section {
         font-size: xx-small;
