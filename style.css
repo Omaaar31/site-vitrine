@@ -326,6 +326,10 @@ header .mail-icon {
     align-items: center;
 }
 
+.first-section .section-content {
+    margin: 16px 0 50px 0;
+}
+
 .first-section .section-content h2 {
     font-family: var(--title-font);
     margin: 20px 0 40px 0;
@@ -373,7 +377,7 @@ header .mail-icon {
 }
 
 .second-section .section-content {
-    margin: 100px 0 80px 0;
+    margin: 80px 0 80px 0;
 }
 
 .second-section .section-content .card .mobile-title {
@@ -483,10 +487,9 @@ header .mail-icon {
 
 .third-section h2 {
     font-family: var(--title-font);
-    margin: 0;
+    margin: 0 0 40px 0;
     text-align: center;
     color: var(--text-color);
-    margin-bottom: 40px;
     text-transform: uppercase;
     text-decoration: underline;
 }
