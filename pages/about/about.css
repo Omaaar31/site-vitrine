@@ -26,7 +26,7 @@ body {
 /*Header*/
 
 header {
-    background: url("../assets/images/image-about.jpg") center;
+    background: url("../../assets/images/image-about.jpg") center;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -396,6 +396,7 @@ footer .footer-content {
 footer .footer-content iframe {
     width: 60%;
     height: 450px;
+    border-radius: 8px;
 }
 
 footer .right-content {
