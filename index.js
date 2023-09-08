@@ -5,6 +5,11 @@ const overlay = document.querySelector('.overlay');
 const logo = document.querySelector('.logo');
 const close = document.querySelector('.close-button');
 const returnTop = document.querySelector('.arrow-container-return-top');
+const marques = document.querySelector('#marque');
+const vehicules = document.querySelector('#vehicule');
+const nom = document.querySelector('#nom');
+const form = document.querySelector('.form');
+
 
 
 arrowContainer.addEventListener('click', () => {
@@ -34,6 +39,47 @@ close.addEventListener('click', () => {
 returnTop.addEventListener('click', () => {
     window.scrollTo(0, 0);
 });
+
+marques.addEventListener('change', () => {
+    const selectedValue = marques.value;
+    console.log('Marque sélectionnée : ' + selectedValue);
+
+});
+
+vehicules.addEventListener('change', () => {
+    const selectedValue = vehicules.value;
+    console.log('Véhicule sélectionné : ' + selectedValue);
+});
+
+
+/* Script which protect against XSS vulnerability */
+function escapeHtml(text) {
+    var map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+
+    return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const nomValue = nom.value;
+    const convertedNomValue = escapeHtml(nomValue);
+    const specialChars = /[&<>"']/;
+
+    if (specialChars.test(convertedNomValue)) {
+        alert('Veuillez supprimer les caractères spéciaux de votre nom !');
+    } else {
+        event.target.submit();
+    }
+});
+
+/* Fin du script*/
+
 
 // Initialisez ScrollReveal
 const sr = ScrollReveal();
