@@ -5,6 +5,13 @@ const overlay = document.querySelector('.overlay');
 const logo = document.querySelector('.logo');
 const close = document.querySelector('.close-button');
 const returnTop = document.querySelector('.arrow-container-return-top');
+const marques = document.querySelector('#marque');
+const vehicules = document.querySelector('#vehicule');
+const nom = document.querySelector('#nom');
+const prenom = document.querySelector('#prenom');
+const immatriculation = document.querySelector('#immatriculation');
+const form = document.querySelector('.form');
+
 
 
 arrowContainer.addEventListener('click', () => {
@@ -34,6 +41,61 @@ close.addEventListener('click', () => {
 returnTop.addEventListener('click', () => {
     window.scrollTo(0, 0);
 });
+
+marques.addEventListener('change', () => {
+    const selectedValue = marques.value;
+    console.log('Marque sélectionnée : ' + selectedValue);
+
+});
+
+vehicules.addEventListener('change', () => {
+    const selectedValue = vehicules.value;
+    console.log('Véhicule sélectionné : ' + selectedValue);
+});
+
+
+/* Script which protect against XSS vulnerability */
+function escapeHtml(text) {
+    let map = {
+        '&': '&amp;',
+        '<': '&lt;',
+        '>': '&gt;',
+        '"': '&quot;',
+        "'": '&#039;'
+    };
+
+    return text.replace(/[&<>"']/g, function(m) { return map[m]; });
+}
+
+form.addEventListener('submit', function(event) {
+    event.preventDefault();
+    const fields = [
+        { input: nom, name: 'Nom' },
+        { input: prenom, name: 'Prénom' },
+        { input: immatriculation, name: 'Immatriculation' }
+    ];
+
+    const specialChars = /[&<>"']/;
+    let invalidFields = [];
+
+    fields.forEach(field => {
+        const value = field.input.value;
+        const convertedValue = escapeHtml(value);
+
+        if (specialChars.test(convertedValue)) {
+            invalidFields.push(field.name);
+        }
+    });
+
+    if (invalidFields.length > 0) {
+        alert(`Veuillez supprimer les caractères spéciaux de votre ${invalidFields.join(' , ')} !`);
+    } else {
+        event.target.submit();
+    }
+});
+
+/* Fin du script*/
+
 
 // Initialisez ScrollReveal
 const sr = ScrollReveal();
