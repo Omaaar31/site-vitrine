@@ -78,7 +78,7 @@ header .mail-icon {
     align-items: center;
     gap: 20px;
     color: var(--alterrnative-text-color);
-    margin: 30vh 0 0 0;
+    margin: auto;
     transform: translateY(-30%);
 }
 
@@ -546,6 +546,7 @@ header .mail-icon {
     text-decoration: none;
     color: var(--text-color);
     position: relative;
+    z-index: 1;
 }
 
 .third-section .section-content .card a::before {
@@ -1056,6 +1057,12 @@ footer .copyright a {
         bottom: 0;
         height: 100%;
         width: 100%;
+    }
+}
+
+@media (min-width: 301px) and (max-width: 344px) {
+    .third-section .section-content .card a::before {
+        width: 5em;
     }
 }
 
