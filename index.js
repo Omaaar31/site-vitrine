@@ -8,6 +8,8 @@ const returnTop = document.querySelector('.arrow-container-return-top');
 const marques = document.querySelector('#marque');
 const vehicules = document.querySelector('#vehicule');
 const nom = document.querySelector('#nom');
+const prenom = document.querySelector('#prenom');
+const immatriculation = document.querySelector('#immatriculation');
 const form = document.querySelector('.form');
 
 
@@ -54,7 +56,7 @@ vehicules.addEventListener('change', () => {
 
 /* Script which protect against XSS vulnerability */
 function escapeHtml(text) {
-    var map = {
+    let map = {
         '&': '&amp;',
         '<': '&lt;',
         '>': '&gt;',
@@ -67,12 +69,26 @@ function escapeHtml(text) {
 
 form.addEventListener('submit', function(event) {
     event.preventDefault();
-    const nomValue = nom.value;
-    const convertedNomValue = escapeHtml(nomValue);
-    const specialChars = /[&<>"']/;
+    const fields = [
+        { input: nom, name: 'Nom' },
+        { input: prenom, name: 'Prénom' },
+        { input: immatriculation, name: 'Immatriculation' }
+    ];
 
-    if (specialChars.test(convertedNomValue)) {
-        alert('Veuillez supprimer les caractères spéciaux de votre nom !');
+    const specialChars = /[&<>"']/;
+    let invalidFields = [];
+
+    fields.forEach(field => {
+        const value = field.input.value;
+        const convertedValue = escapeHtml(value);
+
+        if (specialChars.test(convertedValue)) {
+            invalidFields.push(field.name);
+        }
+    });
+
+    if (invalidFields.length > 0) {
+        alert(`Veuillez supprimer les caractères spéciaux de votre ${invalidFields.join(' , ')} !`);
     } else {
         event.target.submit();
     }
