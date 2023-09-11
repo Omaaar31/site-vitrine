@@ -53,7 +53,6 @@ vehicules.addEventListener('change', () => {
     console.log('Véhicule sélectionné : ' + selectedValue);
 });
 
-
 /* Script which protect against XSS vulnerability */
 function escapeHtml(text) {
     let map = {
