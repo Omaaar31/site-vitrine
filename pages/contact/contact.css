@@ -373,6 +373,7 @@ header .mail-icon {
 .first-section .section-content .left .second-left-box,
 .first-section .section-content .right .right-box {
     border: 1px solid var(--text-color);
+    border-radius: 6px;
     padding: 20px;
 }
 
