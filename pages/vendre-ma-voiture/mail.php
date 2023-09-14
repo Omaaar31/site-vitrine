@@ -17,30 +17,8 @@
 <body>
     <div class="confirmation">
         <h1>Votre formulaire a bien été envoyé</h1>
-
-        <!-- Placez le bloc de script JavaScript ici -->
-        <script>
-            // Fonction pour mettre à jour le compte à rebours
-            function mettreAJourCompteARebours() {
-                var compteARebours = document.getElementById("compteARebours");
-                var secondesRestantes = document.getElementById("secondesRestantes");
-
-                var secondes = parseInt(secondesRestantes.innerText);
-                if (secondes > 0) {
-                    secondesRestantes.innerText = secondes - 1;
-                    setTimeout(mettreAJourCompteARebours, 1000); // Appeler la fonction toutes les 1 seconde
-                } else {
-                    // Rediriger l'utilisateur après 10 secondes (vous pouvez changer l'URL)
-                    window.location.href = "../../index.html";
-                }
-            }
-
-            // Démarrer le compte à rebours lorsque la page est chargée
-            window.addEventListener("load", function() {
-                setTimeout(mettreAJourCompteARebours, 1000); // Appeler la fonction toutes les 1 seconde
-            });
-        </script>
-        <p id="compteARebours">Vous serez redirigé dans <span id="secondesRestantes"> 10</span> secondes...</p>
+        <p id="compteARebours">Vous serez redirigé vers la page d'accueil dans 
+            <span id="secondesRestantes"> 10</span> secondes...</p>
         <div class="previous">
             <a href="javascript:history.back()" class="retour">Retour</a>
         </div>
@@ -48,7 +26,7 @@
         <?php
         session_start();
 
-        // Vérifier si le formulaire a été soumis et toutes les données sont présentes
+        // Check if the form has been submitted and all data are present
         if (
             isset($_POST['nom'])
             && isset($_POST['prenom'])
@@ -74,23 +52,24 @@
 
             $retour = mail('omarboulahbal@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
 
-            // Si le formulaire a été soumis avec succès, enregistrez la soumission dans une variable de session
+            // If the form has been submitted successfully, save the submission as a session variable
             if ($retour) {
                 $_SESSION['formulaire_envoye'] = true;
             }
         }
 
-        // Rediriger l'utilisateur si la variable de session n'est pas définie ou si elle est égale à false
+        // Redirect the user if the session variable is not set or is equal to false
         if (!isset($_SESSION['formulaire_envoye']) || $_SESSION['formulaire_envoye'] !== true) {
             header('Location: ../../index.html');
             exit();
         } else {
+            // Delete the session variable to avoid submitting the form a second time
             unset($_SESSION['formulaire_envoye']);
-            header('refresh:10;url=../../index.html');
-            exit();
         }
         ?>
 
     </div>
+    <script src="mail.js"></script>
 </body>
+
 </html>

@@ -12,8 +12,6 @@ const prenom = document.querySelector('#prenom');
 const immatriculation = document.querySelector('#immatriculation');
 const form = document.querySelector('.form');
 
-
-
 arrowContainer.addEventListener('click', () => {
     sidebar.classList.toggle('open');
     overlay.classList.toggle('active');
@@ -27,14 +25,14 @@ menuMobile.addEventListener('click', () => {
 });
 
 overlay.addEventListener('click', () => {
-    sidebar.classList.remove('open'); // Ferme la sidebar
-    overlay.classList.remove('active'); // Désactive l'overlay
+    sidebar.classList.remove('open'); // Close the sidebar
+    overlay.classList.remove('active'); // Deactivate the overlay
     logo.classList.remove('logo-hidden');
 });
 
 close.addEventListener('click', () => {
-    sidebar.classList.remove('open'); // Ferme la sidebar
-    overlay.classList.remove('active'); // Désactive l'overlay
+    sidebar.classList.remove('open'); // Close the sidebar
+    overlay.classList.remove('active'); // Deactivate the overlay
     logo.classList.remove('logo-hidden');
 });
 
@@ -44,16 +42,15 @@ returnTop.addEventListener('click', () => {
 
 marques.addEventListener('change', () => {
     const selectedValue = marques.value;
-    console.log('Marque sélectionnée : ' + selectedValue);
-
+    console.log('Selected Brand: ' + selectedValue);
 });
 
 vehicules.addEventListener('change', () => {
     const selectedValue = vehicules.value;
-    console.log('Véhicule sélectionné : ' + selectedValue);
+    console.log('Selected Vehicle: ' + selectedValue);
 });
 
-/* Script which protect against XSS vulnerability */
+/* Script that protects against XSS vulnerability */
 function escapeHtml(text) {
     let map = {
         '&': '&amp;',
@@ -69,9 +66,9 @@ function escapeHtml(text) {
 form.addEventListener('submit', function(event) {
     event.preventDefault();
     const fields = [
-        { input: nom, name: 'Nom' },
-        { input: prenom, name: 'Prénom' },
-        { input: immatriculation, name: 'Immatriculation' }
+        { input: nom, name: 'Last Name' },
+        { input: prenom, name: 'First Name' },
+        { input: immatriculation, name: 'License Plate' }
     ];
 
     const specialChars = /[&<>"']/;
@@ -93,23 +90,22 @@ form.addEventListener('submit', function(event) {
     }
 });
 
-/* Fin du script*/
+/* End of script */
 
-
-// Initialisez ScrollReveal
+// Initialize ScrollReveal
 const sr = ScrollReveal();
 
-// Configurez les options pour l'effet de balayage latéral
+// Configure options for the slide-in effect
 const revealOptions = {
-    distance: "100%", // Distance de déplacement horizontal (balayage latéral à partir de la droite)
-    duration: 1000, // Durée de l'animation en millisecondes
-    origin: "left", // Direction de laquelle l'élément sera révélé
-    opacity: 0, // Commence avec une opacité de 0 (invisible)
-    reset: false, // Réinitialise l'animation lorsqu'elle est hors de la vue
-    easing: "ease-in-out", // Type d'animation
+    distance: "100%", // Horizontal displacement distance (slide in from the right)
+    duration: 1000, // Animation duration in milliseconds
+    origin: "left", // Direction from which the element will be revealed
+    opacity: 0, // Starts with opacity 0 (invisible)
+    reset: false, // Reset the animation when out of view
+    easing: "ease-in-out", // Animation type
 };
 
-// Appliquez l'effet de balayage latéral à chaque élément individuellement
+// Apply the slide-in effect to each element individually
 sr.reveal(".step-one", {...revealOptions, delay: 200 });
 sr.reveal(".step-two", {...revealOptions, delay: 400 });
 sr.reveal(".step-three", {...revealOptions, delay: 600 });

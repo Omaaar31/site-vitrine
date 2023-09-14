@@ -17,7 +17,7 @@
 }
 
 
-/* Styles CSS pour le header en fond d'écran */
+/* CSS styles for background header */
 
 body {
     background-image: url('../../assets/images/image-vendre-ma-voiture.jpg');
@@ -32,7 +32,7 @@ body {
 }
 
 
-/* Styles CSS pour le contenu de confirmation */
+/* CSS styles for confirmation content */
 
 .confirmation {
     text-align: center;
@@ -53,7 +53,7 @@ body {
 }
 
 
-/* Styles CSS pour le bouton de retour */
+/* CSS styles for the back button */
 
 .previous {
     text-align: center;
@@ -106,4 +106,24 @@ body {
 
 .retour:active {
     top: 1px;
+}
+
+
+/* Media queries */
+
+@media (max-width: 767px) {
+    .confirmation {
+        padding: 40px;
+    }
+    .confirmation h1 {
+        font-size: 1.8rem;
+        margin: 20px;
+    }
+    #compteARebours {
+        font-size: 1rem;
+        padding: 10px;
+    }
+    .retour {
+        font-size: 0.8rem;
+    }
 }
