@@ -50,6 +50,39 @@ vehicules.addEventListener('change', () => {
     console.log('Selected Vehicle: ' + selectedValue);
 });
 
+document.addEventListener("DOMContentLoaded", function() {
+    const spinner = document.getElementById("spinner");
+    const buttonText = document.getElementById("button-text");
+    const submitButton = document.getElementById("submit-button");
+
+    form.addEventListener("submit", function(event) {
+        event.preventDefault(); // Empêcher la soumission du formulaire pour cet exemple
+
+        // Désactiver le bouton et masquer le texte du bouton
+        submitButton.disabled = true;
+        buttonText.style.display = "none";
+
+        // Afficher le spinner
+        spinner.classList.remove("hidden");
+
+        // Ici, vous pouvez effectuer le traitement du formulaire,
+        // par exemple, une requête AJAX ou autre.
+
+        // Une fois le traitement terminé (simulé ici avec setTimeout), réactivez le bouton
+        setTimeout(function() {
+            // Masquer le spinner
+            spinner.classList.add("hidden");
+
+            // Réactiver le bouton
+            submitButton.disabled = false;
+
+            // Rétablir le texte du bouton
+            buttonText.style.display = "inline";
+        }, 6000); // Vous pouvez ajuster le délai en fonction de votre traitement réel
+    });
+});
+
+
 /* Script that protects against XSS vulnerability */
 function escapeHtml(text) {
     let map = {

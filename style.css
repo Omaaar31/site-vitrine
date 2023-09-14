@@ -268,6 +268,10 @@ header .mail-icon {
     right: 20px;
 }
 
+.close-button:hover {
+    transform: scale(1.1);
+}
+
 .menu {
     list-style: none;
     padding: 0;
@@ -656,6 +660,21 @@ footer .copyright a {
 
 
 /* MEDIA QUERIES */
+
+
+/*Dimensions pour pc portable standard*/
+
+@media (max-width: 1366px) and (max-height: 768px) {
+    header .text-section {
+        transform: translateY(-10%);
+    }
+    .menu {
+        margin: 0 0 30px 0;
+    }
+    .menu li {
+        margin: 20px 0;
+    }
+}
 
 @media (min-width: 768px) and (max-width: 991px) {
     header .header-container {
