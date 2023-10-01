@@ -45,8 +45,15 @@ header .header-container {
 
 header .logo {
     position: relative;
-    margin: 90px 0 0 0;
+    width: 200%;
+    margin: 0 45px;
     cursor: pointer;
+    z-index: 2;
+}
+
+header .logo-link {
+    position: relative;
+    width: 10%;
     z-index: 2;
 }
 
@@ -60,6 +67,11 @@ header .contact-item {
     display: flex;
     align-items: center;
     font-size: 1.4em;
+}
+
+header .contact-item a {
+    text-decoration: none;
+    color: var(--alterrnative-text-color);
 }
 
 header .phone-icon,
@@ -268,14 +280,6 @@ header .mail-icon {
     text-align: center;
 }
 
-.logo-menu {
-    position: relative;
-    margin: 100px 0 0 0;
-    cursor: pointer;
-    z-index: 2;
-    width: 50%;
-}
-
 .sidebar.open {
     left: 0;
 }
@@ -419,17 +423,18 @@ footer .right-content .icon-span {
     margin: 0 0 10px 0;
 }
 
-footer .right-content img {
-    width: 90px;
-}
-
-footer .right-content span {
+footer .right-content .icon-span a {
     font-family: var(--text-font);
     color: var(--text-color);
     font-size: 1rem;
+    text-decoration: none;
     &:hover {
         color: var(--hover-color);
     }
+}
+
+footer .right-content img {
+    width: 90px;
 }
 
 footer .right-content a {
@@ -471,7 +476,8 @@ footer .copyright a {
         margin: auto;
     }
     .menu {
-        margin: 0 0 30px 0;
+        margin: 130px 0 30px;
+        padding: 20px;
     }
     .menu li {
         margin: 20px 0;
@@ -492,12 +498,14 @@ footer .copyright a {
         display: none;
     }
     header .logo {
-        width: 100%;
-        height: 100%;
-        margin: 30px 0 0 30px;
+        width: 160%;
+        margin: 10px -140px;
     }
     header .logo-link {
-        width: 60%;
+        width: 20%;
+    }
+    .menu-icon img {
+        width: 80%;
     }
     .arrow-container {
         display: none;
@@ -522,10 +530,6 @@ footer .copyright a {
     .sidebar {
         font-size: 2vw;
         left: -300px;
-    }
-    .logo-menu {
-        margin: 0;
-        width: 50%;
     }
     .close-button {
         top: 20px;
@@ -569,9 +573,8 @@ footer .copyright a {
         display: none;
     }
     header .logo {
-        width: 130%;
-        height: 100%;
-        margin: 0 0 0 -10px;
+        width: inherit;
+        margin: 0 100px;
     }
     header .logo-link {
         width: 60%;
@@ -593,10 +596,6 @@ footer .copyright a {
     .sidebar {
         font-size: 2vw;
         left: -300px;
-    }
-    .logo-menu {
-        margin: 0;
-        width: 50%;
     }
     .close-button {
         top: 20px;
@@ -653,9 +652,8 @@ footer .copyright a {
         height: 100px;
     }
     header .logo {
-        width: 130%;
-        height: 100%;
-        margin: 0;
+        width: inherit;
+        margin: 6px 80px;
     }
     .text-section {
         display: flex;
@@ -687,10 +685,6 @@ footer .copyright a {
         font-size: 2vw;
         width: 60%;
         left: -100%;
-    }
-    .logo-menu {
-        margin: 0 0 40px 0;
-        width: 50%;
     }
     .close-button {
         top: 10px;
@@ -737,9 +731,8 @@ footer .copyright a {
         height: 100px;
     }
     header .logo {
-        width: 170%;
-        height: 100%;
-        margin: 0 0 0 -40px;
+        width: inherit;
+        margin: 10px 60px;
     }
     .text-section {
         font-size: xx-small;
@@ -772,9 +765,6 @@ footer .copyright a {
         font-size: 2vw;
         width: 60%;
         left: -100%;
-    }
-    .logo-menu {
-        display: none;
     }
     .close-button {
         top: 10px;
@@ -851,9 +841,6 @@ footer .copyright a {
         font-size: 2vw;
         width: 100%;
         left: -100%;
-    }
-    .logo-menu {
-        display: none;
     }
     .menu {
         margin: 0;
