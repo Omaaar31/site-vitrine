@@ -17,7 +17,7 @@
 <body>
     <div class="confirmation">
         <h1>Votre formulaire a bien été envoyé</h1>
-        <p id="compteARebours">Vous serez redirigé vers la page d'accueil dans 
+        <p id="compteARebours">Vous serez redirigé vers la page d'accueil dans
             <span id="secondesRestantes"> 10</span> secondes...</p>
         <div class="previous">
             <a href="javascript:history.back()" class="retour">Retour</a>
@@ -34,6 +34,11 @@
             && isset($_POST['telephone'])
             && isset($_POST['marque'])
             && isset($_POST['annee'])
+            && isset($_POST['code-postal'])
+            && isset($_POST['carburant'])
+            && isset($_POST['vehicule'])
+            && isset($_POST['immatriculation'])
+            && isset($_POST['message'])
         ) {
 
             $entete  = 'MIME-Version: 1.0' . "\r\n";
@@ -43,12 +48,17 @@
 
             $message = '<h2>Message envoyé depuis la page Vendre ma voiture de
             <a href="https://omaaar31.github.io/site-vitrine/">lesbourdettes.fr</a></h2>
-            <p><b>Nom : </b>' . $_POST['nom'] . '<br>
+            <><b>Nom : </b>' . $_POST['nom'] . '<br>
             <b>Prénom : </b>' . $_POST['prenom'] . '<br>
-            <p><b>Mail : </b>' . $_POST['mail'] . '<br>
+            <br><b>Mail : </b>' . $_POST['mail'] . '<br>
             <b>Téléphone : </b>' . $_POST['telephone'] . '<br>
+            <b>Code postale : </b>' . $_POST['code-postal'] . '<br>
+            <b>Type de véhicule : </b>' . $_POST['vehicule'] . '<br>
             <b>Marque : </b>' . $_POST['marque'] . '<br>
-            <b>Année : </b>' . $_POST['annee'] . '<br>';
+            <b>Type de carburant : </b>' . $_POST['carburant'] . '<br>
+            <b>Année : </b>' . $_POST['annee'] . '<br>;
+            <b>Immatriculation : </b>' . $_POST['immatriculation'] . '<br>;
+            <b>Message : </b>' . $_POST['message'] . '</p>';
 
             $retour = mail('omarboulahbal@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
 

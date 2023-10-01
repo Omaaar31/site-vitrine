@@ -24,7 +24,7 @@
             </div>
             <!--  End of menu burger for mobile device -->
             <a class="logo-link" href="../../index.html">
-                <img class="logo" src="../../assets/images/logo.png" alt="logo" />
+                <img class="logo" src="../../assets/images/logo-transparent.png" alt="logo" />
             </a>
 
             <div class="contact-icons">
@@ -34,17 +34,17 @@
                 </div>
                 <div class="contact-item">
                     <img class="mail-icon" src="../../assets/icons/mail.png" alt="mail-icon" />
-                    <span class="email">lesbourdettes31@gmail.com</span>
+                    <a href="mailto:lesbourdettes31@gmail.com">lesbourdettes31@gmail.com</a>
                 </div>
             </div>
         </div>
         <div class="text-section">
             <div class="bold-text">
-                <h1><strong>Vendre ma voiture</strong></h1>
+                <h1><strong>Vendre mon véhicule</strong></h1>
             </div>
             <div class="breadcrumb">
                 <a href="../../index.html">
-                Accueil</a> / Vendre ma voiture
+                    Accueil</a> / Vendre mon véhicule
             </div>
         </div>
     </header>
@@ -55,14 +55,11 @@
                 <img src="../../assets/icons/close.png" alt="close-menu" />
             </div>
             <ul class="menu">
-                <a href="../../index.html">
-                    <img class="logo-menu" src="../../assets/images/logo-sidebar.png" alt="logo" />
-                </a>
                 <li><a href="../../index.html">Accueil</a></li>
                 <div class="menu-line-separation"></div>
-                <li><a href="./index.html">Vendre<br> ma voiture</a></li>
+                <li><a href="./index.html">Vendre<br> mon véhicule</a></li>
                 <div class="menu-line-separation"></div>
-                <li><a href="../qui-sommes-nous/index.html">Qui sommes-<br>nous ?</a></li>
+                <li><a href="../a-propos-de-nous/index.html">A propos de<br>nous</a></li>
                 <div class="menu-line-separation"></div>
                 <li><a href="../contact/index.html">Contact</a></li>
             </ul>
@@ -70,7 +67,7 @@
                 <a href="#">
                     <img class="logo-facebook" src="../../assets/icons/facebook.png" alt="logo-facebook" />
                 </a>
-                <a href="#">
+                <a href="https://www.instagram.com/lesbourdettes_auto/" target="_blank">
                     <img class="logo-instagram" src="../../assets/icons/instagram.png" alt="logo-instagram" />
                 </a>
             </div>
@@ -96,7 +93,7 @@
                                 libero. Donec nec dolor eget libero dictum commodo quis vitae tortor. Cras faucibus eget augue non condimentum. Curabitur in semper massa. Morbi pulvinar ac quam vel sagittis. Aenean non justo nunc. Nam lorem dolor, vulputate
                                 quis nunc placerat, viverra imperdiet nulla. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec et molestie justo. Nam scelerisque nec dolor a eleifend. Proin malesuada metus sed tristique ornare. Curabitur
                                 eu ipsum nunc. Vestibulum ultrices orci iaculis nisi vestibulum ultrices. Nunc vestibulum quam a massa pulvinar pulvinar.</p>
-                            <button>Vendre ma voiture</button>
+                            <button>Vendre mon véhicule</button>
                         </div>
                     </div>
                 </div>
@@ -145,7 +142,8 @@
             <section class="third-section">
                 <div class="section-content">
                     <h2><strong>Formulaire</strong></h2>
-                    <h3>Remplissez le formulaire suivant pour obtenir une estimation par téléphone, dans les meilleurs délais.</h3>
+                    <h3>Remplissez le formulaire suivant pour obtenir une estimation par téléphone, dans les meilleurs délais.
+                    </h3>
                     <div class="container">
                         <!--FORM-->
                         <form action="mail.php" method="post" class="form">
@@ -171,12 +169,18 @@
                             </div>
                             <div class="row">
                                 <div class="form-group">
+                                    <label for="code-postal">Code Postal*</label>
+                                    <input type="text" id="code-postal" name="code-postal" class="gray-input" pattern="[0-9]{5}" autocomplete="off" title="Format : nombre à 5 chiffres" required>
+                                </div>
+                                <div class="form-group">
                                     <label for="vehicule">Type de Véhicule*</label>
                                     <select id="vehicule" name="vehicule" class="gray-input" required>
                                         <option value="voiture">Voiture</option>
                                         <option value="utilitaire">Utilitaire</option>
                                     </select>
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="form-group">
                                     <label for="marque">Marque*</label>
                                     <select id="marque" name="marque" class="gray-input" required>
@@ -207,23 +211,37 @@
                                         <option value="Volvo">Volvo</option>
                                     </select>
                                 </div>
+                                <div class="form-group">
+                                    <label for="carburant">Type de carburant*</label>
+                                    <select id="carburant" name="carburant" class="gray-input" required>
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="Essence">Essence</option>
+                                        <option value="Hybride">Hybride</option>
+                                        <option value="Electrique">Electrique</option>
+                                    </select>
+                                </div>
                             </div>
                             <div class="row">
+                                <div class="form-group">
+                                    <label for="annee">Année*</label>
+                                    <input type="text" id="annee" name="annee" class="gray-input" pattern="[0-9]{4}" autocomplete="off" title="Format : nombre à 4 chiffres" required>
+                                </div>
                                 <div class="form-group">
                                     <label for="immatriculation">Immatriculation</label>
                                     <input type="text" id="immatriculation" name="immatriculation" class="gray-input" autocomplete="off">
                                 </div>
+                            </div>
+                            <div class="row">
                                 <div class="form-group">
-                                    <label for="annee">Année*</label>
-                                    <input type="text" id="annee" name="annee" class="gray-input" pattern="[0-9]{4}" autocomplete="off" title="Format : nombre à 4 chiffres" required>
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" class="gray-input" rows="5" cols="33" autocomplete="off" placeholder="Etat du véhicule (en panne, fonctionnelle, à remorquer, etc.)..."></textarea>
                                 </div>
                             </div>
                             <div class="row-button">
                                 <button type="submit" id="submit-button">
                                     <span id="button-text">Envoyer</span>
-                                    
-                                    <div id="spinner" class="spinner hidden"></div>
 
+                                    <div id="spinner" class="spinner hidden"></div>
                                 </button>
                             </div>
                         </form>
@@ -250,8 +268,8 @@
     <!--FOOTER-->
     <footer>
         <div class="footer-content">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.6033288363296!2d1.3501074766149057!3d43.552309958949586!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb74cbb897cad%3A0xd613a4d8b77104ab!2sChem.%20des%20Bourdettes%2C%2031270%20Cugnaux!5e0!3m2!1sfr!2sfr!4v1692894718830!5m2!1sfr!2sfr"
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" title="location-map"></iframe>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.5475159485945!2d1.3501909999999997!3d43.553473200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb0b4c5cefc5d%3A0xbc7468f276241a30!2s55%20Chem.%20des%20Bourdettes%2C%2031270%20Cugnaux!5e0!3m2!1sfr!2sfr!4v1694888712613!5m2!1sfr!2sfr"
+                style="border:0;" allowfullscreen="" loading="lazy" title="location-map" referrerpolicy="no-referrer-when-downgrade"></iframe>
             <div class="right-content">
                 <div class="icon-span">
                     <a href="#">
@@ -262,7 +280,7 @@
                 <div class="icon-span">
                     <a href="#">
                         <img class="mail-icon" src="../../assets/icons/footer-mail.png" alt="mail-icon" />
-                        <span class="email">lesbourdettes31@gmail.com</span>
+                        <a href="mailto:lesbourdettes31@gmail.com">lesbourdettes31@gmail.com</a>
                     </a>
                 </div>
                 <div class="icon-span">
@@ -272,9 +290,9 @@
                     </a>
                 </div>
                 <div class="icon-span">
-                    <a href="#">
+                    <a href="https://www.instagram.com/lesbourdettes_auto/" target="_blank">
                         <img class="logo-instagram" src="../../assets/icons/instagram.png" alt="logo-instagram" />
-                        <span>les_bourdettes_31</span>
+                        <span>lesbourdettes_auto</span>
                     </a>
                 </div>
             </div>
