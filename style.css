@@ -125,6 +125,7 @@ header .mail-icon {
     left: 10px;
     transform: translate(-50%, -50%);
     animation: moveContainer 1s infinite alternate;
+    z-index: 1;
 }
 
 .arrow-container:hover {
@@ -328,7 +329,7 @@ header .mail-icon {
 /* First Section */
 
 .first-section {
-    margin: 60px 0 55px 0;
+    margin: 60px auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -359,15 +360,56 @@ header .mail-icon {
     flex: 0 0 35%;
     padding: 20px;
     background-color: var(--main-color);
-    margin: 0 0 200px 0;
+    margin: 0 0 10px 0;
     border-radius: 10px;
 }
 
+.first-section .section-content .card .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0 20px -40px;
+}
+
 .first-section .section-content .card .right img {
-    width: 600px;
-    height: auto;
-    margin: 200px 0 0 -16px;
+    max-width: 90vh;
+    height: 30vw;
     border-radius: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: var(--hover-color);
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:active,
+.next:active {
+    transform: translateY(-50%) scale(0.9);
+    transition: transform 0.2s;
 }
 
 
@@ -756,10 +798,38 @@ footer .copyright a {
         margin-right: auto;
         margin-left: auto;
     }
+    .first-section .section-content .card .right {
+        margin: 20px 0;
+        text-align: center;
+    }
     .first-section .section-content .card .right img {
-        margin: -200px 0 0 0;
-        width: 85%;
+        max-width: 100%;
         height: auto;
+        border-radius: 10px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 80%;
+        margin: -70px auto;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        color: var(--hover-color);
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
     }
     .second-section .section-content {
         text-align: center;
@@ -859,10 +929,38 @@ footer .copyright a {
         margin-right: auto;
         margin-left: auto;
     }
+    .first-section .section-content .card .right {
+        margin: 20px 0;
+        text-align: center;
+    }
     .first-section .section-content .card .right img {
-        margin: -200px 0 0 0;
-        width: 85%;
+        max-width: 100%;
         height: auto;
+        border-radius: 10px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 80%;
+        margin: -70px auto;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        color: var(--hover-color);
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
     }
     .second-section .section-content .card .mobile-title {
         display: block;
@@ -1029,10 +1127,38 @@ footer .copyright a {
         margin-right: auto;
         margin-left: auto;
     }
+    .first-section .section-content .card .right {
+        padding: 20px;
+        margin: 20px 0 70px;
+        text-align: center;
+    }
     .first-section .section-content .card .right img {
-        margin: -200px 0 24px 0;
-        width: 90%;
-        height: 190px;
+        max-width: 100%;
+        height: auto;
+        border-radius: 10px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 90%;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        color: var(--hover-color);
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
     }
     .second-section .section-content .card .mobile-title {
         display: block;
@@ -1148,10 +1274,38 @@ footer .copyright a {
         margin-right: auto;
         margin-left: auto;
     }
+    .first-section .section-content .card .right {
+        padding: 20px;
+        margin: 20px 0 70px;
+        text-align: center;
+    }
     .first-section .section-content .card .right img {
-        margin: -200px 0 170px 0;
-        width: 90%;
+        max-width: 100%;
         height: auto;
+        border-radius: 10px;
+    }
+    .slideshow-container {
+        position: relative;
+        max-width: 90%;
+    }
+    .prev,
+    .next {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        color: var(--hover-color);
+        text-align: center;
+        line-height: 50px;
+        font-size: 30px;
+        cursor: pointer;
+    }
+    .prev {
+        left: 0;
+    }
+    .next {
+        right: 0;
     }
     .second-section .section-content {
         text-align: center;
