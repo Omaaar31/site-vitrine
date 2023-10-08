@@ -435,6 +435,10 @@ header .mail-icon {
     gap: 20px;
 }
 
+.first-section .section-content .right .right-box a {
+    text-decoration: none;
+}
+
 .first-section .section-content .right .right-box h3,
 .first-section .section-content .right .right-box p {
     display: flex;

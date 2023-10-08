@@ -476,6 +476,10 @@ header .mail-icon {
     padding: 20px;
 }
 
+.second-section .section-content .card .right a {
+    text-decoration: none;
+}
+
 .second-section .section-content .card .right button {
     position: relative;
     display: flex;

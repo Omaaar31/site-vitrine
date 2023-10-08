@@ -410,6 +410,10 @@ header .mail-icon {
     padding: 20px;
 }
 
+.first-section .section-content .card .right a {
+    text-decoration: none;
+}
+
 button {
     position: relative;
     display: flex;
@@ -536,6 +540,7 @@ button:active {
     text-decoration: none;
     color: var(--text-color);
     position: relative;
+    z-index: 1;
 }
 
 .second-section .section-content .card a::before {
