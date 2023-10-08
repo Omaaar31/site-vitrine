@@ -378,15 +378,56 @@ header .mail-icon {
     flex: 0 0 35%;
     padding: 20px;
     background-color: var(--main-color);
-    margin: 0 0 200px 0;
+    margin: 0 0 10px 0;
     border-radius: 10px;
 }
 
+.first-section .section-content .card .right {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 20px;
+    margin: 20px 0 20px -40px;
+}
+
 .first-section .section-content .card .right img {
-    width: 600px;
-    height: auto;
-    margin: 200px 0 0 -16px;
+    max-width: 90vh;
+    height: 30vw;
     border-radius: 10px;
+}
+
+.slideshow-container {
+    position: relative;
+    max-width: 100%;
+    margin: auto;
+}
+
+.prev,
+.next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 50px;
+    height: 50px;
+    color: var(--hover-color);
+    text-align: center;
+    line-height: 50px;
+    font-size: 30px;
+    cursor: pointer;
+}
+
+.prev {
+    left: 0;
+}
+
+.next {
+    right: 0;
+}
+
+.prev:active,
+.next:active {
+    transform: translateY(-50%) scale(0.9);
+    transition: transform 0.2s;
 }
 
 
