@@ -432,25 +432,36 @@ header .mail-icon {
 
 .second-section .section-content .card .right .desktop-title {
     font-family: var(--title-font);
-    margin: 0;
     text-align: center;
     color: var(--text-color);
-    margin-bottom: 40px;
+    margin: 0 0 -30px;
     text-transform: uppercase;
     text-decoration: underline;
 }
 
-.second-section .section-content p {
+.second-section .section-content ul {
     font-family: var(--text-font);
     margin: 50px 0 20px 0;
     color: var(--alterrnative-text-color);
+}
+
+.second-section .section-content li {
+    list-style: none;
+    padding: 2px 0;
+}
+
+.custom-list ul li::before {
+    content: "\2022";
+    color: var(--text-color);
+    font-size: 1.5em;
+    display: inline-block;
+    margin: 0 10px;
 }
 
 .second-section .section-content .card {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 70px;
 }
 
 .second-section .section-content .card .left img {
@@ -463,8 +474,6 @@ header .mail-icon {
 .second-section .section-content .card .right {
     flex: 0 0 30%;
     padding: 20px;
-    margin: 0 0 0 20px;
-    text-align: center;
 }
 
 .second-section .section-content .card .right button {
@@ -812,25 +821,6 @@ footer .copyright a {
         max-width: 80%;
         margin: -70px auto;
     }
-    .prev,
-    .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        color: var(--hover-color);
-        text-align: center;
-        line-height: 50px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .prev {
-        left: 0;
-    }
-    .next {
-        right: 0;
-    }
     .second-section .section-content {
         text-align: center;
     }
@@ -851,19 +841,21 @@ footer .copyright a {
         display: none;
     }
     .second-section .section-content .card .right {
-        width: 80%;
-        margin-right: auto;
-        margin-left: auto;
-    }
-    .second-section .section-content .card .right p {
-        margin: 0 0 50px 0;
+        flex: 0 0 100%;
+        padding: 20px;
+        text-align: start;
     }
     .second-section .section-content .card .right button {
-        margin: 0 auto;
+        margin: 0 auto -40px;
     }
     .second-section .section-content .card .left img {
         width: 85%;
         height: auto;
+    }
+    .second-section .section-content ul {
+        font-family: var(--text-font);
+        margin: 30px 0 60px 0;
+        color: var(--alterrnative-text-color);
     }
 }
 
@@ -943,25 +935,6 @@ footer .copyright a {
         max-width: 80%;
         margin: -70px auto;
     }
-    .prev,
-    .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        color: var(--hover-color);
-        text-align: center;
-        line-height: 50px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .prev {
-        left: 0;
-    }
-    .next {
-        right: 0;
-    }
     .second-section .section-content .card .mobile-title {
         display: block;
         font-family: var(--title-font);
@@ -986,15 +959,22 @@ footer .copyright a {
         margin-right: auto;
         margin-left: auto;
     }
-    .second-section .section-content .card .right p {
-        margin: 0 0 50px 0;
+    .second-section .section-content .card .right {
+        flex: 0 0 100%;
+        padding: 20px;
+        text-align: start;
     }
     .second-section .section-content .card .right button {
-        margin: 0 auto;
+        margin: 0 auto -40px;
     }
     .second-section .section-content .card .left img {
         width: 85%;
         height: auto;
+    }
+    .second-section .section-content ul {
+        font-family: var(--text-font);
+        margin: 30px 0 40px 0;
+        color: var(--alterrnative-text-color);
     }
     .third-section .section-content .card {
         display: flex;
@@ -1141,25 +1121,6 @@ footer .copyright a {
         position: relative;
         max-width: 90%;
     }
-    .prev,
-    .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        color: var(--hover-color);
-        text-align: center;
-        line-height: 50px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .prev {
-        left: 0;
-    }
-    .next {
-        right: 0;
-    }
     .second-section .section-content .card .mobile-title {
         display: block;
         font-family: var(--title-font);
@@ -1287,25 +1248,6 @@ footer .copyright a {
     .slideshow-container {
         position: relative;
         max-width: 90%;
-    }
-    .prev,
-    .next {
-        position: absolute;
-        top: 50%;
-        transform: translateY(-50%);
-        width: 50px;
-        height: 50px;
-        color: var(--hover-color);
-        text-align: center;
-        line-height: 50px;
-        font-size: 30px;
-        cursor: pointer;
-    }
-    .prev {
-        left: 0;
-    }
-    .next {
-        right: 0;
     }
     .second-section .section-content {
         text-align: center;

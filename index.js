@@ -40,8 +40,6 @@ function showSlides(n) {
     slides[slideIndex - 1].style.display = "block";
 }
 
-
-
 arrowContainer.addEventListener('click', () => {
     sidebar.classList.toggle('open');
     overlay.classList.toggle('active');
@@ -111,10 +109,6 @@ document.addEventListener("DOMContentLoaded", function() {
         }, 6000); // Vous pouvez ajuster le délai en fonction de votre traitement réel
     });
 });
-
-
-
-
 
 /* Script that protects against XSS vulnerability */
 function escapeHtml(text) {
