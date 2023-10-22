@@ -607,7 +607,6 @@ footer .copyright {
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    margin: 30px 0 0 0;
 }
 
 footer .copyright p {
