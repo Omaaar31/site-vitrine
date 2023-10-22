@@ -808,6 +808,20 @@ footer .copyright a {
 /*Media queries*/
 
 
+/*Dimensions pour pc larges*/
+
+@media (min-width: 1440px) {
+    header .logo {
+        width: 200%;
+        margin: -20px 45px;
+    }
+    .first-section .section-content .card .right {
+        font-size: 1.3rem;
+        flex: 0 0 30%;
+    }
+}
+
+
 /*Dimensions pour pc portable standard*/
 
 @media (max-width: 1366px) and (max-height: 768px) {

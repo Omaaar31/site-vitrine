@@ -627,6 +627,16 @@ footer .copyright a {
 /* MEDIA QUERIES*/
 
 
+/*Dimensions pour pc larges*/
+
+@media (min-width: 1440px) {
+    header .logo {
+        width: 200%;
+        margin: -20px 45px;
+    }
+}
+
+
 /*Dimensions pour pc portable standard*/
 
 @media (max-width: 1366px) and (max-height: 768px) {
