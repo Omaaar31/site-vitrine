@@ -431,6 +431,44 @@ header .mail-icon {
 }
 
 
+/* Cookie Banner */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: var(--alterrnative-text-color);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0.95;
+    transition: opacity 0.3s;
+}
+
+.cookie-banner p {
+    font-family: var(--text-font);
+    margin: 10px;
+    font-size: 16px;
+}
+
+.cookie-button {
+    background-color: var(--gadiant-color4);
+    color: var(--alterrnative-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cookie-button:hover {
+    background-color: var(--gadiant-color1);
+}
+
+
 /*Footer*/
 
 footer {
