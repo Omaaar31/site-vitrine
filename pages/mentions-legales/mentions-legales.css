@@ -353,6 +353,10 @@ header .mail-icon {
     font-size: 1.8rem;
 }
 
+.first-section h3 {
+    font-family: var(--title-font);
+}
+
 .first-section li {
     list-style: none;
     margin: 30px 0;
@@ -362,6 +366,52 @@ header .mail-icon {
 ul {
     font-family: var(--text-font);
     font-size: 1.2rem;
+}
+
+.first-section .credits a {
+    text-decoration: none;
+    color: var(--text-color);
+    &:hover {
+        color: var(--main-color);
+    }
+}
+
+
+/* Cookie Banner */
+
+.cookie-banner {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    color: var(--alterrnative-text-color);
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px -2px 5px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    opacity: 0.95;
+    transition: opacity 0.3s;
+}
+
+.cookie-banner p {
+    font-family: var(--text-font);
+    margin: 10px;
+    font-size: 16px;
+}
+
+.cookie-button {
+    background-color: var(--gadiant-color4);
+    color: var(--alterrnative-text-color);
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+.cookie-button:hover {
+    background-color: var(--gadiant-color1);
 }
 
 
@@ -516,6 +566,14 @@ footer .copyright a {
     .social-logo {
         margin: 60px 0 -20px 0;
     }
+    .first-section {
+        margin: 0 50px;
+        /* Vous pouvez ajuster les valeurs selon vos besoins */
+    }
+    .first-section h1 {
+        font-size: 1.5rem;
+        /* Vous pouvez ajuster la taille de la police selon vos besoins */
+    }
 }
 
 @media (max-width: 767px) {
@@ -565,6 +623,23 @@ footer .copyright a {
     }
     .social-logo {
         margin: 60px 0 -20px 0;
+    }
+    .first-section {
+        margin: 0 20px;
+        /* Vous pouvez ajuster les valeurs selon vos besoins */
+    }
+    .first-section h1 {
+        font-size: 1.4rem;
+        /* Vous pouvez ajuster la taille de la police selon vos besoins */
+    }
+    .first-section li {
+        margin: 15px 0;
+        /* Vous pouvez ajuster les marges selon vos besoins */
+    }
+    .first-section p,
+    .first-section ul {
+        font-size: 1.1rem;
+        /* Vous pouvez ajuster la taille de la police selon vos besoins */
     }
     footer .footer-content {
         display: flex;
@@ -643,6 +718,23 @@ footer .copyright a {
     }
     .social-logo img {
         width: 70px;
+    }
+    .first-section {
+        margin: 0 10px;
+        /* Vous pouvez ajuster les valeurs selon vos besoins */
+    }
+    .first-section h1 {
+        font-size: 1.2rem;
+        /* Vous pouvez ajuster la taille de la police selon vos besoins */
+    }
+    .first-section li {
+        margin: 10px 0;
+        /* Vous pouvez ajuster les marges selon vos besoins */
+    }
+    .first-section p,
+    .first-section ul {
+        font-size: 1rem;
+        /* Vous pouvez ajuster la taille de la police selon vos besoins */
     }
 }
 
