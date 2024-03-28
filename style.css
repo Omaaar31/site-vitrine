@@ -396,6 +396,8 @@ header .mail-icon {
     line-height: 50px;
     font-size: 30px;
     cursor: pointer;
+    border: none;
+    background: none;
 }
 
 .prev {
@@ -1017,8 +1019,6 @@ footer .copyright a {
         width: 80%;
         margin-right: auto;
         margin-left: auto;
-    }
-    .second-section .section-content .card .right {
         flex: 0 0 100%;
         padding: 20px;
         text-align: start;
