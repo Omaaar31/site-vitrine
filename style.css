@@ -45,8 +45,8 @@ header .header-container {
 
 header .logo {
     position: relative;
-    width: 200%;
-    margin: 0 45px;
+    width: 350%;
+    margin: 0 0 -50px 0;
     cursor: pointer;
     z-index: 2;
 }
@@ -767,7 +767,7 @@ footer .copyright a {
 @media (min-width: 1440px) {
     header .logo {
         width: 200%;
-        margin: -20px 45px;
+        margin: -90px 45px;
     }
     .first-section .section-content .card .left {
         font-size: 1.3rem;
@@ -809,8 +809,8 @@ footer .copyright a {
         display: none;
     }
     header .logo {
-        width: 160%;
-        margin: 10px -140px;
+        width: 200%;
+        margin: -20px -140px;
     }
     header .logo-link {
         width: 20%;
@@ -935,8 +935,8 @@ footer .copyright a {
         display: none;
     }
     header .logo {
-        width: inherit;
-        margin: 0 100px;
+        width: 80%;
+        margin: -30px 100px;
     }
     header .logo-link {
         width: 60%;
@@ -1106,8 +1106,8 @@ footer .copyright a {
         height: 100px;
     }
     header .logo {
-        width: inherit;
-        margin: 6px 80px;
+        width: 70%;
+        margin: -10px 80px;
     }
     .text-section {
         font-size: x-small;
@@ -1234,8 +1234,8 @@ footer .copyright a {
         height: 100px;
     }
     header .logo {
-        width: inherit;
-        margin: 10px 60px;
+        width: 100%;
+        margin: 0 30px;
     }
     .text-section {
         font-size: xx-small;
