@@ -1,16 +1,12 @@
-// script.js
-
 let slideIndex = 1;
 showSlides(slideIndex);
 
 function plusSlides(n) {
-    slideIndex += n;
-    showSlides(slideIndex);
+    showSlides(slideIndex += n);
 }
 
 function currentSlide(n) {
-    slideIndex = n;
-    showSlides(slideIndex);
+    showSlides(slideIndex = n);
 }
 
 function showSlides(n) {
