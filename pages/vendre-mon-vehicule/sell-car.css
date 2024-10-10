@@ -29,7 +29,7 @@ body {
 /*Header*/
 
 header {
-    background: url("../../assets/images/image-vendre-ma-voiture.jpg") center;
+    background: url("../../assets/images/image-vendre-ma-voiture-floutee.jpg") center;
     background-size: cover;
     display: flex;
     flex-direction: column;
