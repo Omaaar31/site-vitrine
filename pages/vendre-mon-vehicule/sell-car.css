@@ -664,6 +664,18 @@ button:active {
     background-color: var(--input-color);
 }
 
+#messageMarque {
+    display: none;
+    font-family: var(--text-font);
+    margin-left: 10px;
+    color: #ff0000;
+}
+
+.champs-obligatoires {
+    font-family: var(--text-font);
+    font-weight: bold;
+}
+
 .row-button {
     margin: 60px 0 0 0;
 }

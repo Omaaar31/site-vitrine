@@ -71,6 +71,16 @@ if (annee) {
     })
 };
 
+function checkMarqueSelection() {
+    let marque = document.getElementById("marque").value;
+    let message = document.getElementById("message-marque");
+    if (marque === "Autre") {
+        message.style.display = "block";
+    } else {
+        message.style.display = "none";
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const spinner = document.getElementById("spinner");
     const buttonText = document.getElementById("button-text");
