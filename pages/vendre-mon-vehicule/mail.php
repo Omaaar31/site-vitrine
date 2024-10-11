@@ -50,7 +50,7 @@
 
             $entete  = 'MIME-Version: 1.0' . "\r\n";
             $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-            $entete .= 'From: omarboulahbal@gmail.com' . "\r\n";
+            $entete .= 'From: charlyautomobiles31@gmail.com' . "\r\n";
             $entete .= 'Reply-to: ' . $_POST['mail'];
 
             $message = '<h2>Message envoyé depuis la page Vendre ma voiture de
@@ -67,7 +67,7 @@
             <b>Immatriculation : </b>' . $_POST['immatriculation'] . '<br>
             <b>Message : </b>' . $_POST['message'] . '</p>';
 
-            $retour = mail('omarboulahbal@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
+            $retour = mail('charlyautomobiles31@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
 
             // If the form has been submitted successfully, save the submission as a session variable
             if ($retour) {
