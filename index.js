@@ -73,11 +73,14 @@ if (annee) {
 
 function checkMarqueSelection() {
     let marque = document.getElementById("marque").value;
-    let message = document.getElementById("message-marque");
+    let messageField = document.getElementById("message");
+    let messageMarque = document.getElementById("message-marque");
     if (marque === "Autre") {
-        message.style.display = "block";
+        messageMarque.style.display = "block";
+        messageField.setAttribute("required", "required");
     } else {
-        message.style.display = "none";
+        messageMarque.style.display = "none";
+        messageField.removeAttribute("required");
     }
 }
 

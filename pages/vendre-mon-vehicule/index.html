@@ -198,7 +198,7 @@
                             <div class="row">
                                 <div class="form-group">
                                     <label for="marque">Marque*</label>
-                                    <select id="marque" name="marque" class="gray-input" required onchange="checkMarqueSelection()">
+                                    <select id="marque" name="marque" class="gray-input" required onchange="checkMarqueSelection()" >
                                         <option value="" disabled selected>Sélectionnez une marque</option>
                                         <option value="Autre">Autre</option>
                                         <option value="Alfa Romeo">Alfa Romeo</option>
@@ -229,38 +229,38 @@
                                     </select>
                                     <span id="message-marque">Précisez la marque dans la rubrique Message.</span>
                                 </div>
-                                <div class="form-group ">
-                                    <label for="carburant ">Type de carburant*</label>
-                                    <select id="carburant " name="carburant " class="gray-input " required>
-                                        <option value="Diesel ">Diesel</option>
-                                        <option value="Essence ">Essence</option>
-                                        <option value="Hybride ">Hybride</option>
-                                        <option value="Electrique ">Electrique</option>
+                                <div class="form-group">
+                                    <label for="carburant">Type de carburant*</label>
+                                    <select id="carburant" name="carburant" class="gray-input" required>
+                                        <option value="Diesel">Diesel</option>
+                                        <option value="Essence">Essence</option>
+                                        <option value="Hybride">Hybride</option>
+                                        <option value="Electrique">Electrique</option>
                                     </select>
                                 </div>
                             </div>
-                            <div class="row ">
-                                <div class="form-group ">
-                                    <label for="annee ">Année*</label>
-                                    <input type="text " id="annee " name="annee " class="gray-input " pattern="[0-9]{4} " autocomplete="off " title="Format : nombre à 4 chiffres " required>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="annee">Année*</label>
+                                    <input type="text" id="annee" name="annee" class="gray-input" pattern="[0-9]{4}" autocomplete="off" title="Format : nombre à 4 chiffres" required>
                                 </div>
-                                <div class="form-group ">
-                                    <label for="immatriculation ">Immatriculation</label>
-                                    <input type="text " id="immatriculation " name="immatriculation " class="gray-input " autocomplete="off ">
+                                <div class="form-group">
+                                    <label for="immatriculation">Immatriculation</label>
+                                    <input type="text" id="immatriculation" name="immatriculation" class="gray-input" autocomplete="off">
                                 </div>
                             </div>
-                            <div class="row ">
-                                <div class="form-group ">
-                                    <label for="message ">Message</label>
-                                    <textarea id="message " name="message " class="gray-input " rows="5 " cols="33 " autocomplete="off " placeholder="Etat du véhicule (en panne, fonctionnel, à remorquer, etc.)... "></textarea>
+                            <div class="row">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea id="message" name="message" class="gray-input" rows="5" cols="33" autocomplete="off" placeholder="Etat du véhicule (en panne, fonctionnel, à remorquer, etc.)..."></textarea>
                                     <small class="champs-obligatoires">* Champs obligatoires</small>
                                 </div>
                             </div>
-                            <div class="row-button ">
-                                <button type="submit " id="submit-button ">
-                                    <span id="button-text ">Envoyer</span>
+                            <div class="row-button">
+                                <button type="submit" id="submit-button">
+                                    <span id="button-text">Envoyer</span>
 
-                                    <div id="spinner " class="spinner hidden "></div>
+                                    <div id="spinner" class="spinner hidden"></div>
                                 </button>
                             </div>
                         </form>
@@ -270,69 +270,69 @@
     </main>
 
     <!--ARROW MENU-->
-    <div class="arrow-container ">
-        <div class="arrow ">
-            <div class="div1 "></div>
-            <div class="div2 "></div>
+    <div class="arrow-container">
+        <div class="arrow">
+            <div class="div1"></div>
+            <div class="div2"></div>
         </div>
     </div>
 
     <!--RETURN TOP-->
-    <div class="arrow-container-return-top ">
-        <div class="arrow-return-top ">
-            <div class="div1 "></div>
+    <div class="arrow-container-return-top">
+        <div class="arrow-return-top">
+            <div class="div1"></div>
         </div>
     </div>
 
     <!--FOOTER-->
     <footer>
-        <div class="footer-content ">
+        <div class="footer-content">
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2891.5475159485945!2d1.3501909999999997!3d43.553473200000006!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12aeb0b4c5cefc5d%3A0xbc7468f276241a30!2s55%20Chem.%20des%20Bourdettes%2C%2031270%20Cugnaux!5e0!3m2!1sfr!2sfr!4v1694888712613!5m2!1sfr!2sfr "
-                style="border:0; " allowfullscreen=" " loading="lazy " title="location-map " referrerpolicy="no-referrer-when-downgrade "></iframe>
-            <div class="right-content ">
-                <div class="icon-span ">
-                    <a href="tel:0699519652 ">
-                        <img class="phone-icon " src="../../assets/icons/footer-phone.png " alt="phone-icon " />
+                style="border:0;" allowfullscreen="" loading="lazy" title="location-map" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div class="right-content">
+                <div class="icon-span">
+                    <a href="tel:0699519652">
+                        <img class="phone-icon" src="../../assets/icons/footer-phone.png" alt="phone-icon" />
                         <span>06 99 51 96 52</span>
                     </a>
                 </div>
-                <div class="icon-span ">
-                    <a href="mailto:charlyautomobiles31@gmail.com ">
-                        <img class="mail-icon " src="../../assets/icons/footer-mail.png " alt="mail-icon " />
-                        <span href="mailto:charlyautomobiles31@gmail.com ">charlyautomobiles31@gmail.com</span>
+                <div class="icon-span">
+                    <a href="mailto:charlyautomobiles31@gmail.com">
+                        <img class="mail-icon" src="../../assets/icons/footer-mail.png" alt="mail-icon" />
+                        <span href="mailto:charlyautomobiles31@gmail.com">charlyautomobiles31@gmail.com</span>
                     </a>
                 </div>
-                <div class="icon-span ">
-                    <a href="https://www.facebook.com/profile.php?id=61560107947524&locale=fr_FR ">
-                        <img class="logo-facebook " src="../../assets/icons/facebook.png " alt="logo-facebook " />
+                <div class="icon-span">
+                    <a href="https://www.facebook.com/profile.php?id=61560107947524&locale=fr_FR">
+                        <img class="logo-facebook" src="../../assets/icons/facebook.png" alt="logo-facebook" />
                         <span>Charly Automobiles</span>
                     </a>
                 </div>
-                <div class="icon-span ">
-                    <a href="https://www.instagram.com/charlyautomobiles/ " target="_blank ">
-                        <img class="logo-instagram " src="../../assets/icons/instagram.png " alt="logo-instagram " />
+                <div class="icon-span">
+                    <a href="https://www.instagram.com/charlyautomobiles/" target="_blank">
+                        <img class="logo-instagram" src="../../assets/icons/instagram.png" alt="logo-instagram" />
                         <span>Charly Automobiles</span>
                     </a>
                 </div>
             </div>
         </div>
-        <div class="overlay "></div>
-        <div class="copyright ">
-            <a href="../mentions-legales/index.html ">
+        <div class="overlay"></div>
+        <div class="copyright">
+            <a href="../mentions-legales/index.html">
                 <p>Mentions légales</p>
             </a>
         </div>
     </footer>
 
     <!--COOKIES-->
-    <div id="cookie-banner " class="cookie-banner ">
+    <div id="cookie-banner" class="cookie-banner">
         <p>Ce site web utilise des cookies pour assurer son bon fonctionnement. Aucune information personnelle n'est collectée. En continuant à utiliser ce site, vous acceptez notre utilisation des cookies.</p>
-        <button id="accept-cookie " class="cookie-button ">J'accepte</button>
+        <button id="accept-cookie" class="cookie-button">J'accepte</button>
     </div>
 
-    <script src="../../index.js "></script>
-    <script src="../../scroll-reveal.js "></script>
-    <script src="../../cookies.js "></script>
+    <script src="../../index.js"></script>
+    <script src="../../scroll-reveal.js"></script>
+    <script src="../../cookies.js"></script>
 </body>
 
 </html>

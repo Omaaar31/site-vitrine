@@ -664,7 +664,7 @@ button:active {
     background-color: var(--input-color);
 }
 
-#messageMarque {
+#message-marque {
     display: none;
     font-family: var(--text-font);
     margin-left: 10px;
