@@ -50,12 +50,12 @@
 
             $entete  = 'MIME-Version: 1.0' . "\r\n";
             $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-            $entete .= 'From: ' . $_POST['mail'] . "\r\n";
+            $entete .= 'From: omarboulahbal@gmail.com' . "\r\n";
             $entete .= 'Reply-to: ' . $_POST['mail'];
 
             $message = '<h2>Message envoyé depuis la page Vendre ma voiture de
-            <a href="https://omaaar31.github.io/site-vitrine/">lesbourdettes.fr</a></h2>
-            <><b>Nom : </b>' . $_POST['nom'] . '<br>
+            <a href="https://charlyautomobiles31.fr">charlyautomobiles31.fr</a></h2>
+            <b>Nom : </b>' . $_POST['nom'] . '<br>
             <b>Prénom : </b>' . $_POST['prenom'] . '<br>
             <br><b>Mail : </b>' . $_POST['mail'] . '<br>
             <b>Téléphone : </b>' . $_POST['telephone'] . '<br>
@@ -63,8 +63,8 @@
             <b>Type de véhicule : </b>' . $_POST['vehicule'] . '<br>
             <b>Marque : </b>' . $_POST['marque'] . '<br>
             <b>Type de carburant : </b>' . $_POST['carburant'] . '<br>
-            <b>Année : </b>' . $_POST['annee'] . '<br>;
-            <b>Immatriculation : </b>' . $_POST['immatriculation'] . '<br>;
+            <b>Année : </b>' . $_POST['annee'] . '<br>
+            <b>Immatriculation : </b>' . $_POST['immatriculation'] . '<br>
             <b>Message : </b>' . $_POST['message'] . '</p>';
 
             $retour = mail('omarboulahbal@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
