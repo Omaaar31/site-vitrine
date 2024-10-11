@@ -26,11 +26,11 @@ body {
 /*Header*/
 
 header {
-    background: url("../../assets/images/image-about-services.jpg") center;
+    background: url("../../assets/images/image-about-services-floutee.jpg") center;
     background-size: cover;
     display: flex;
     flex-direction: column;
-    height: 100vh;
+    height: 88vh;
 }
 
 header .header-container {

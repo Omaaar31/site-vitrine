@@ -71,6 +71,19 @@ if (annee) {
     })
 };
 
+function checkMarqueSelection() {
+    let marque = document.getElementById("marque").value;
+    let messageField = document.getElementById("message");
+    let messageMarque = document.getElementById("message-marque");
+    if (marque === "Autre") {
+        messageMarque.style.display = "block";
+        messageField.setAttribute("required", "required");
+    } else {
+        messageMarque.style.display = "none";
+        messageField.removeAttribute("required");
+    }
+}
+
 document.addEventListener("DOMContentLoaded", function() {
     const spinner = document.getElementById("spinner");
     const buttonText = document.getElementById("button-text");

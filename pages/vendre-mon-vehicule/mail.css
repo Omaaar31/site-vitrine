@@ -20,14 +20,14 @@
 /* CSS styles for background header */
 
 body {
-    background-image: url('../../assets/images/image-vendre-ma-voiture.jpg');
+    background-image: url('../../assets/images/image-vendre-ma-voiture-floutee.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     background-attachment: fixed;
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    height: 100vh;
+    height: 88vh;
     backdrop-filter: blur(10px);
 }
 
