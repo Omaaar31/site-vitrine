@@ -78,6 +78,7 @@
         // Redirect the user if the session variable is not set or is equal to false
         if (!isset($_SESSION['formulaire_envoye']) || $_SESSION['formulaire_envoye'] !== true) {
             header('Location: ../../index.html');
+            header('HTTP/1.1 200 OK');
             exit();
         } else {
             // Delete the session variable to avoid submitting the form a second time
