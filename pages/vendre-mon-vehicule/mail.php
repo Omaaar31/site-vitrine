@@ -74,7 +74,7 @@
             <hr>
             <p>—<br>Charly Automobiles<br><a href="https://charlyautomobiles31.fr">charlyautomobiles31.fr</a></p>';
 
-            $retour = mail('charlyautomobiles31@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
+            $retour = mail('omarboulahbal@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
 
             // If the form has been submitted successfully, save the submission as a session variable
             if ($retour) {
@@ -85,6 +85,7 @@
         // Redirect the user if the session variable is not set or is equal to false
         if (!isset($_SESSION['formulaire_envoye']) || $_SESSION['formulaire_envoye'] !== true) {
             header('Location: ../../index.html');
+            header('HTTP/1.1 200 OK');
             exit();
         } else {
             // Delete the session variable to avoid submitting the form a second time
