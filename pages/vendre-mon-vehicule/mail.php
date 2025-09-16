@@ -31,6 +31,9 @@
         </div>
 
         <?php
+        ini_set('SMTP', 'smtp.gmail.com');
+        ini_set('smtp_port', 587);
+        ini_set('sendmail_from', 'charlyautomobiles31@gmail.com');
         session_start();
 
         // Check if the form has been submitted and all data are present
@@ -50,11 +53,13 @@
 
             $entete  = 'MIME-Version: 1.0' . "\r\n";
             $entete .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-            $entete .= 'From: omarboulahbal@gmail.com' . "\r\n";
-            $entete .= 'Reply-to: ' . $_POST['mail'];
+            $entete .= 'From: Charly Automobiles <charlyautomobiles31@gmail.com>' . "\r\n";
+            $entete .= 'Reply-To: ' . filter_var($_POST['mail'], FILTER_SANITIZE_EMAIL) . "\r\n";
+            $entete .= 'X-Mailer: PHP/' . phpversion() . "\r\n";
 
-            $message = '<h2>Message envoyé depuis la page Vendre ma voiture de
-            <a href="https://charlyautomobiles31.fr">charlyautomobiles31.fr</a></h2>
+            $message = '
+            <h2>Nouveau message depuis le formulaire de vente</h2>
+            <p>Vous avez reçu un message depuis le site <a href="https://charlyautomobiles31.fr">charlyautomobiles31.fr</a>.</p>
             <b>Nom : </b>' . $_POST['nom'] . '<br>
             <b>Prénom : </b>' . $_POST['prenom'] . '<br>
             <br><b>Mail : </b>' . $_POST['mail'] . '<br>
@@ -65,7 +70,9 @@
             <b>Type de carburant : </b>' . $_POST['carburant'] . '<br>
             <b>Année : </b>' . $_POST['annee'] . '<br>
             <b>Immatriculation : </b>' . $_POST['immatriculation'] . '<br>
-            <b>Message : </b>' . $_POST['message'] . '</p>';
+            <b>Message : </b>' . $_POST['message'] . '<br>
+            <hr>
+            <p>—<br>Charly Automobiles<br><a href="https://charlyautomobiles31.fr">charlyautomobiles31.fr</a></p>';
 
             $retour = mail('omarboulahbal@gmail.com', 'Envoi depuis page Vendre ma voiture', $message, $entete);
 
